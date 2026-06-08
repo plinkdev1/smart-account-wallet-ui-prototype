@@ -10,7 +10,7 @@
 
 ORYA Wallet is the **experience layer** of the ORYA platform: a design-complete, fully navigable front-end prototype. Every screen, component, transition, and chart is built and explorable on mock data, so the entire product can be experienced end to end with no backend. Its job is to make the product vision, information architecture, and design system tangible.
 
-> **Where is the engine room?** The production architecture — 30+ microservices, on-chain MPC (IKA 2PC-MPC on Sui), account abstraction across four providers, and omnichain support (EVM, Sui, Solana, Bitcoin) — lives in a separate repository. This repo is the front end that sits on top of that platform; here it runs on mock data so it stands alone.
+> **Where is the engine room?** The production architecture — 30+ microservices, on-chain MPC (IKA 2PC-MPC on Sui), account abstraction across four providers, and omnichain support (EVM, Sui, Solana, Bitcoin) — lives in a separate repository — **[plinkdev1/orya-wallet](https://github.com/plinkdev1/orya-wallet)** (private until release). This repo is the front end that sits on top of that platform; here it runs on mock data so it stands alone.
 
 ## Screens
 
@@ -100,3 +100,4 @@ Open http://localhost:3000 — it loads straight into Vault on mock data; no log
 ## Disclaimer
 
 Prototype shared as a portfolio artifact. Not financial software; do not use with real funds.
+
