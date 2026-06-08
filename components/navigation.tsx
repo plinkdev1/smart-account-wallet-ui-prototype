@@ -1,0 +1,44 @@
+"use client"
+
+import { Wallet, ArrowLeftRight, Award, Headphones, Building2 } from "lucide-react"
+import { cn } from "@/lib/utils"
+
+interface NavigationProps {
+  activeTab: "vault" | "link" | "circle" | "care" | "suite"
+  setActiveTab: (tab: "vault" | "link" | "circle" | "care" | "suite") => void
+}
+
+export function Navigation({ activeTab, setActiveTab }: NavigationProps) {
+  const tabs = [
+    { id: "vault" as const, label: "Vault", icon: Wallet },
+    { id: "link" as const, label: "Link", icon: ArrowLeftRight },
+    { id: "circle" as const, label: "Circle", icon: Award },
+    { id: "care" as const, label: "Care", icon: Headphones },
+    { id: "suite" as const, label: "Suite", icon: Building2 },
+  ]
+
+  return (
+    <nav className="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-t border-border/50 shadow-sm">
+      <div className="flex items-center justify-around px-2 py-2 max-w-lg mx-auto">
+        {tabs.map((tab) => {
+          const Icon = tab.icon
+          const isActive = activeTab === tab.id
+
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={cn(
+                "flex flex-col items-center gap-1.5 px-5 py-2.5 rounded-2xl transition-smooth",
+                isActive ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-foreground",
+              )}
+            >
+              <Icon className="w-5 h-5" />
+              <span className="text-xs font-semibold">{tab.label}</span>
+            </button>
+          )
+        })}
+      </div>
+    </nav>
+  )
+}
