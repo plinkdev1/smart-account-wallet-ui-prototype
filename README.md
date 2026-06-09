@@ -6,20 +6,19 @@
 
 [![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Status](https://img.shields.io/badge/status-prototype-blue)]()
 
 *The design exploration behind ORYA - dashboard, assets, send/receive, and chain switching.*
 
 </div>
 
+> **Related:** smart-account backend -> [orya-omnichain-smart-account-wallet](https://github.com/plinkdev1/orya-omnichain-smart-account-wallet)
+
 ---
 
 ## What Is This?
 
-This is the front-end UI prototype for the ORYA wallet - a focused exploration of the wallet experience: dashboard layout, asset list, send/receive flows, and chain switching. It's UI-led; on-chain logic is mocked here and lives in the main ORYA smart-account repo.
-
-> **Design first - the look and feel of ORYA.**
+This is the front-end UI prototype for the ORYA wallet - a focused exploration of the wallet experience: dashboard layout, asset list, send/receive flows, and chain switching. It's UI-led; the on-chain logic lives in the paired smart-account repo.
 
 ---
 
@@ -106,21 +105,15 @@ tsconfig.json
 
 ## Screenshots
 
-<p align="center">
-  <img src="screenshots/01.png" width="800" />
-  <img src="screenshots/02.png" width="800" />
-  <img src="screenshots/03.png" width="800" />
-  <img src="screenshots/04.png" width="800" />
-  <img src="screenshots/05.png" width="800" />
-  <img src="screenshots/06.png" width="800" />
-  <img src="screenshots/07.png" width="800" />
-  <img src="screenshots/08.png" width="800" />
-  <img src="screenshots/09.png" width="800" />
-  <img src="screenshots/10.png" width="800" />
-  <img src="screenshots/11.png" width="800" />
-  <img src="screenshots/12.png" width="800" />
-  <img src="screenshots/13.png" width="800" />
-</p>
+<table>
+<tr><td width="50%"><img src="screenshots/01.png" width="100%" /></td><td width="50%"><img src="screenshots/02.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/03.png" width="100%" /></td><td width="50%"><img src="screenshots/04.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/05.png" width="100%" /></td><td width="50%"><img src="screenshots/06.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/07.png" width="100%" /></td><td width="50%"><img src="screenshots/08.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/09.png" width="100%" /></td><td width="50%"><img src="screenshots/10.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/11.png" width="100%" /></td><td width="50%"><img src="screenshots/12.png" width="100%" /></td></tr>
+<tr><td width="50%"><img src="screenshots/13.png" width="100%" /></td></tr>
+</table>
 
 ---
 
@@ -135,7 +128,7 @@ npx next dev
 
 ## Notes
 
-Shared as a portfolio artifact demonstrating product and UX design. UI prototype - logic is mocked. See the ORYA smart-account wallet repo for the on-chain side.
+Shared as a portfolio artifact demonstrating product and UX design. UI prototype - logic is mocked. The on-chain backend lives in [orya-omnichain-smart-account-wallet](https://github.com/plinkdev1/orya-omnichain-smart-account-wallet).
 
 <div align="center">
 
